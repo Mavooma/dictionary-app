@@ -1,4 +1,32 @@
-.Photos img {
-  border-radius: 4px;
-  margin-bottom: 20px;
+.Phonetic {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 15px 0;
+  font-size: 1rem;
+}
+
+/* "Listen" link styled like a button */
+.Phonetic a {
+  background: #1a1a1a;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 12px;
+  transition: all 0.2s ease-in-out;
+}
+
+.Phonetic a:hover {
+  background: #333;
+}
+
+/* Phonetic text */
+.Phonetic .text {
+  color: #444;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Georgia', serif;
+  letter-spacing: 0.5px;
 }

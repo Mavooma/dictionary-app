@@ -1,5 +1,22 @@
+.Results {
+  margin: 30px 0;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 10px 22px rgba(0, 0, 0, 0.05);
+}
+
+/* Word heading */
 .Results h2 {
-  font-size: 36px;
-  font-weight: bold;
-  line-height: 1.5;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+/* Individual meaning blocks (already styled in Meaning.css, but this ensures spacing) */
+.Results > div {
+  margin-bottom: 20px;
 }

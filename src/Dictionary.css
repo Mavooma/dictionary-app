@@ -1,26 +1,97 @@
-.Dictionary h1 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 20px;
+body {
+  background: #f5f3ef; /* soft paper-like background */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #1c1c1c;
+  margin: 0;
+  padding: 0;
 }
 
+/* Main container */
+.Dictionary {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #faf8f4;
+  border-radius: 20px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Section style */
 .Dictionary section {
-  background: white;
-  padding: 30px;
-  border-radius: 6px;
-  box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
-  margin: 20px 0;
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-.Dictionary input {
+/* Heading */
+.Dictionary h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
+  color: #1a1a1a;
+}
+
+/* Input */
+.Dictionary input[type="search"] {
   width: 100%;
-  border-radius: 6px;
-  padding: 6px 10px;
-  color: #333;
-  border: 1px solid #ddd;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: #f0eeeb;
+  outline: none;
+  transition: all 0.2s ease-in-out;
 }
 
-.Dictionary .hint {
-  font-size: 11px;
-  margin-top: 5px;
+.Dictionary input[type="search"]:focus {
+  background: #e8e6e3;
+  box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
+}
+
+/* Hint text */
+.hint {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #7b7b7b;
+  font-style: italic;
+}
+
+/* Buttons (if you add some later) */
+button {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #333;
+}
+
+/* Results & Photos container (just to match style) */
+.Results, .Photos {
+  margin-top: 20px;
+}
+
+.Results h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.Photos img {
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.Photos img:hover {
+  transform: scale(1.03);
 }
